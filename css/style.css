@@ -111,7 +111,7 @@ blockquote {
   padding-right: 0;
 }
 .title {
-  margin-top: 0px;
+  margin-top: 0;
 }
 #portrait {
   height: 100px;
@@ -391,85 +391,60 @@ blockquote {
 
 /* Media queries for responsiveness */
 
-/* Extra small devices (phones, less than 600px) */
-@media (max-width: 599px) {
-  body {
-      background-color: #f4f4f4;
-  }
+      /* Media queries for mobile devices */
+      @media screen and (max-width: 768px) {
+        nav {
+          display: flex;
+          flex-direction: column;
+        }
 
-  header, footer {
-      font-size: 1.2em;
-      padding: 1em;
-  }
+        nav a {
+          padding: 10px;
+          font-size: 16px;
+        }
 
-  main {
-      padding: 1em;
-  }
+        header, footer {
+          text-align: center;
+          padding: 20px 10px;
+        }
 
-  section {
-      padding: 1em;
-  }
-}
+        main {
+          padding: 10px;
+          width: 100%;
+        }
+      }
 
-/* Small devices (portrait tablets and large phones, 600px and up)  */
-@media (min-width: 600px) and (max-width: 767px) {
-  body {
-      background-color: #e4e4e4;
-  }
+      /* Media queries for larger mobile devices */
+      @media screen and (min-width: 769px) and (max-width: 1024px) {
+        nav a {
+          padding: 12px 15px;
+          font-size: 18px;
+        }
 
-  header, footer {
-      font-size: 1.4em;
-      padding: 1.2em;
-  }
+        header, footer {
+          padding: 15px 20px;
+        }
 
-  main {
-      padding: 1.5em;
-  }
+        main {
+          padding: 15px;
+        }
+      }
 
-  section {
-      padding: 1.5em;
-  }
-}
+      /* Media queries for desktop devices */
+      @media screen and (min-width: 1025px) {
+        nav a {
+          padding: 14px 20px;
+          font-size: 20px;
+        }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) {
-  body {
-      background-color: #d4d4d4;
-  }
+        header, footer {
+          padding: 20px 30px;
+        }
 
-  header, footer {
-      font-size: 1.6em;
-      padding: 1.5em;
-  }
-
-  main {
-      padding: 2em;
-  }
-
-  section {
-      padding: 2em;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media (min-width: 992px) {
-  body {
-      background-color: #c4c4c4;
-  }
-
-  header, footer {
-      font-size: 1.8em;
-      padding: 2em;
-  }
-
-  main {
-      padding: 2.5em;
-  }
-
-  section {
-      padding: 2.5em;
-  }
-}
+        main {
+          padding: 20px;
+        }
+      }
 
 /* Pills
 ---------------------------------- */
