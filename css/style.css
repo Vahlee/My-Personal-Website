@@ -511,6 +511,29 @@ media-heading, h4 {
   background-attachment: fixed; 
   background-position: center; 
 }
+
+@media (max-width: 767.98px) {
+  .nav-link {
+      margin-right: 0 !important; /* Remove right margin on smaller screens */
+      text-align: center; 
+      padding: 10px 0; 
+  }
+  .navbar-brand {
+      width: 100%;
+  }
+  .container-fluid {
+      padding: 0 15px; 
+  }
+  .lead {
+      font-size: 1rem; 
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-link {
+      margin-right: 10px; 
+  }
+}
 /* end */
 
 /* Forms
