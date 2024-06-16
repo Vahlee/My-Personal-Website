@@ -392,7 +392,7 @@ blockquote {
 /* Media queries for responsiveness */
 /* small screen sizes */
 /* home page */
-@media (max-width:768px) {
+@media (max-width:769px) {
 header.header.fixed.clearfix.navbar.navbar-fixed-top {
   background-color:#373A40;
 }
