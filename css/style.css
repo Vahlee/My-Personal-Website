@@ -113,7 +113,7 @@ blockquote {
 .title {
   margin-top: 0;
 }
-#portrait {
+#traidtrait {
   height: 100px;
   border-radius: 50px;
 }
@@ -390,86 +390,106 @@ blockquote {
 
 
 /* Media queries for responsiveness */
+/* small screen sizes */
+/* home page */
+@media (max-width:768px) {
+header.header.fixed.clearfix.navbar.navbar-fixed-top {
+  background-color:#373A40;
+}
+a {
+  font-size: 20px;
+}
+img#portrait {
+  width: 70px;
+  height: 70px;
+  border-radius: 80px;
+}
+h1.text-center.val {
+  font-size: 30px;
+}
+h1#programming-skills, h1.text-center {
+  font-size: 24px;
+}
+h1.text-center.val > span {
+  color: #A7E6FF;
+}
+h2.text-center.val > span {
+  color: #A7E6FF;
+}
+div.default-bg.space.blue {
+  background-color: #686D76;
+}
+p.lead.text-center {
+  font-size: 15px;
+}
+h4.media-heading {
+  font-size: 20px;
+}
+.program-font, div.media, p.program-font, p.text-center {
+  font-size: 12px;
+  padding: 10px;
+}
+p.text-center > a {
+  font-size: 12px;
+  color: blue;
+}
+div#banner.banner::after {
+  background-image: url(../images/portfolio-9.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat
+}
+header.header.fixed.clearfix.navbar.navbar-fixed-top {
+  margin: 0px Opx 10px;
+  padding: 5px 0px;
+}
+ /* about page */
+h1#about.title.text-center {
+  font-size: 3rem ;
+}
+h1#about.title.text-center > span {
+  color: #5A72A0
+}
+div.violet-image.col-md-6 > img {
+  padding: 0px 20px;
+  margin: 0 0 0 65px;
+  height: 200px;
 
-/* Extra small devices (phones, less than 600px) */
-@media (max-width: 599px) {
-  body {
-      background-color: #f4f4f4;
-  }
-
-  header, footer {
-      font-size: 1.2em;
-      padding: 1em;
-  }
-
-  main {
-      padding: 1em;
-  }
-
-  section {
-      padding: 1em;
-  }
+}
+div.about-paragraph > p, .list-unstyled {
+  font-size: 15px;
+  text-align: justify;
+  padding: 10px;
+}
+ a.collapsed {
+  font-size: 15px;
+}
+.panel-body  {
+  font-size: 12px;
+}
+.panel-body > a {
+  font-size: 12px;
+}
+/* contact page */
+h1#contact.title.text-center {
+  font-size: 30px;
+}
+h1#contact.title.text-center > span {
+  color: #5A72A0;
+}
+div.contact-footer-content > p.large {
+  font-size: 15px;
+  margin: 0px 0px 20px;
+  padding: 10px 0px;
+}
+div.contact-footer-content > ul {
+  font-size: 15px;
+}
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up)  */
-@media (min-width: 600px) and (max-width: 767px) {
-  body {
-      background-color: #e4e4e4;
-  }
 
-  header, footer {
-      font-size: 1.4em;
-      padding: 1.2em;
-  }
 
-  main {
-      padding: 1.5em;
-  }
 
-  section {
-      padding: 1.5em;
-  }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) {
-  body {
-      background-color: #d4d4d4;
-  }
-
-  header, footer {
-      font-size: 1.6em;
-      padding: 1.5em;
-  }
-
-  main {
-      padding: 2em;
-  }
-
-  section {
-      padding: 2em;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media (min-width: 992px) {
-  body {
-      background-color: #c4c4c4;
-  }
-
-  header, footer {
-      font-size: 1.8em;
-      padding: 2em;
-  }
-
-  main {
-      padding: 2.5em;
-  }
-
-  section {
-      padding: 2.5em;
-  }
-}
 
 /* Pills
 ---------------------------------- */
