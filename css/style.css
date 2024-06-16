@@ -413,6 +413,10 @@ h1#programming-skills, h1.text-center {
 h1.text-center.val > span {
   color: #A7E6FF;
 }
+h4.media-heading-css {
+  text-align: left;
+  font-size: 20px;
+}
 h2.text-center.val > span {
   color: #A7E6FF;
 }
