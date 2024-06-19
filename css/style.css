@@ -65,11 +65,11 @@ h3 span,
 h4 span {
   color: peachpuff;
 }
-.text-colored {
-  color: red;
+.text-coloblack {
+  color: black;
 }
 a {
-  color: red;
+  color: black;
 }
 a:hover {
   color: pink;
@@ -234,7 +234,7 @@ blockquote {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
 }
-.translucent-bg.red:after {
+.translucent-bg.black:after {
   background-color: rgb(25, 3, 3);
 }
 .translucent-bg .container {
@@ -318,7 +318,7 @@ blockquote {
   transition: all 0.2s ease-in-out;
 }
 .btn-default {
-  color: red;
+  color: black;
   border: 1px solid #cccccc;
 }
 .btn-default:hover {
@@ -379,7 +379,7 @@ blockquote {
 }
 .panel-heading a:hover {
   text-decoration: none;
-  background-color: red;
+  background-color: black;
   color: #ffffff;
 }
 .panel-title a i {
@@ -488,23 +488,25 @@ div.contact-footer-content > p.large {
 div.contact-footer-content > ul {
   font-size: 15px;
 }
-}
+
 /* portfolio page */
 div.container-fluid-portfolio {
-  margin-top: 50px;
+  margin-top: 150px;
 }
 div.container-fluid-portfolio > h1 > span {
   font-size: 30px;
   color: #5A72A0;
 
 }
-div.list-horizontal-item > img {
-  width: 70px;
-  height: 50px;
-  display: flex;
-  
+
 }
+
+
 /* end */
+
+p.program-font {
+  text-align: left;
+}
 
 /* Media queries for responsiveness */
 /* large screen sizes */
@@ -606,7 +608,7 @@ div.list-horizontal-item > img {
   div.contact-footer-content > ul {
     font-size: 15px;
   }
-  }
+
   /* portfolio page */
   div.container-fluid-portfolio {
     margin-top: 120px;
@@ -616,16 +618,29 @@ div.list-horizontal-item > img {
     color: #5A72A0;
   
   }
-  div.list-horizontal-item > img {
-    width: 70px;
-    height: 50px;
-    display: flex;
-    
+ img.portfolio-image {
+    width: 150px;
+    height: auto; 
+       
   }
+  .subfooter-portfolio {
+    padding-top: 100px;
+  }
+
   div.translucent-bg.blue.mt-5::after {
     margin-bottom: 200px;
     padding: 50px;
   }
+
+  div.translucent-bg.blue.mt-5::after {
+    margin-bottom: 200px;
+    padding: 50px;
+  }
+    
+  }
+
+  
+  
   /* end */
 
 
@@ -721,7 +736,7 @@ textarea {
   border-radius: 0px;
 }
 .modal-header {
-  background-color: red;
+  background-color: black;
   color: #ffffff;
 }
 .modal-header h4 {
@@ -736,15 +751,17 @@ textarea {
 }
 
 /* Large devices (Large desktops 1200px and up) */
-@media (min-width: 1200px) and (min-width: 800px) {
+@media (max-width: 2500px) and (min-width: 750px) {
   .modal-lg {
     width: 1140px;
   }
-  div.translucent-bg.blue.mt-5::after {
-    margin-bottom: 200px;
-    padding: 50px;
+  /* portfolio correction */
+  ul.nav.nav-pills {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
   }
-
+  
 }
 
 
@@ -806,7 +823,7 @@ textarea {
   .header.navbar-fixed-top {
     position: absolute;
   }
-}
+
 
 /* Fixed Header
 ----------------------------------------------------------------------------- */
@@ -898,7 +915,7 @@ textarea {
   transition: all 0.2s ease-in-out;
 }
 .social-links li.twitter a:hover {
-  color: red;
+  color: black;
 }
 .social-links li.skype a:hover {
   color: #00aff0;
